@@ -3,6 +3,12 @@
   "name": "My Extension",
   "description": "make all black",
   "version": "1.0.0",
+  "background": {
+    "scripts": [
+      "./backgroundScripts/jquery.js",
+      "./backgroundScripts/background.js"
+    ]
+  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],

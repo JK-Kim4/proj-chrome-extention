@@ -1,9 +1,8 @@
-const sendMessageToCurrentPage = (name, message) => {
-  chrome.tabs.query({ active: true, currentWindow: true }, (pages) => {
-    chrome.tabs.sendMessage(pages[0].id, { name, message })
-  })
-}
-
-setInterval(() => {
-  sendMessageToCurrentPage('firstMessage', 'Hi Content Script!')
-}, 10000)
+window.addEventListener('DOMContentLoaded', () => {
+  const isNaverMainPage =
+    window.location.hostname === 'www.naver.com' &&
+    window.location.pathname === '/'
+  if (isNaverPage) {
+    messageToBackground('VISIT_NAVER', {})
+  }
+})
