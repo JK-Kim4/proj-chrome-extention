@@ -1,0 +1,24 @@
+{
+  "name": "gextension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JK-Kim4/proj-chrome-extention.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JK-Kim4/proj-chrome-extention/issues"
+  },
+  "homepage": "https://github.com/JK-Kim4/proj-chrome-extention#readme",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}

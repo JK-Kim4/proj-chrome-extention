@@ -12,3 +12,11 @@ observerForInitialLoad.observe(document, {
   childList: true,
   subtree: true,
 })
+
+myExtensionNext()
+
+const myExtensionScript = () => {
+  console.log('script')
+}
+
+myExtensionScript()
